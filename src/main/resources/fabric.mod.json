@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "nomoretotems",
+	"version": "${version}",
+	"name": "NoMoreTotems",
+	"description": "No More Totems, Disables totems in minecraft.",
+	"authors": [
+		"dxv"
+	],
+	"contact": {
+		"homepage": "https://dxvprojects.org/nomoretotems",
+		"sources": "https://github.com/dxvC0des/nomoretotems"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/nomoretotems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"org.dxvprojects.nomoretotems.NoMoreTotems"
+		],
+		"fabric-datagen": [
+			"org.dxvprojects.nomoretotems.NoMoreTotemsDataGenerator"
+		]
+	},
+	"mixins": [
+		"nomoretotems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
